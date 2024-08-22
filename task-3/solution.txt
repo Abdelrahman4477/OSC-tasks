@@ -16,7 +16,8 @@
  cd logs/
  tar -cvf logs_backup.tar *
  mv logs_backup.tar ~/project_files/
- tar -xvf ~/project_files/logs_backup.tar
+ cd ~/prject_files/
+ tar -xvf logs_backup.tar -C ~/project_files/logs
  cd ~
  find -name "*.md"
  find ~/project_files/ -name "*.log"
